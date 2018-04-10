@@ -57,9 +57,9 @@ title: Gebruik
     {% elsif num == 5 or num == 7 %}
       {% assign bg = 'transparent' %}
     {% elsif num == 3 %}
-      {% assign bg = 'colored' %}
-    {% else %}
       {% assign bg = 'dark' %}
+    {% else %}
+      {% assign bg = 'colored' %}
     {% endif %}
 
     <div class = 'thumbnail thumbnail-small {{ bg }}'>
@@ -85,9 +85,9 @@ title: Gebruik
     {% elsif num == 5 or num == 7 %}
       {% assign bg = 'transparent' %}
     {% elsif num == 3 %}
-      {% assign bg = 'colored' %}
-    {% else %}
       {% assign bg = 'dark' %}
+    {% else %}
+      {% assign bg = 'colored' %}
     {% endif %}
     <div class = 'thumbnail thumbnail-small {{ bg }}'>
       <img src = '{{site.baseurl}}/assets/images/{{img}}.png' alt = '{{ img }}'>
