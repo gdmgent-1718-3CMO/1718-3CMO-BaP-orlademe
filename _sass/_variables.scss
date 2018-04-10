@@ -33,20 +33,30 @@ $s-breakpoint:  567px;
 .colored{
   background: $primary-color;
 }
-.dark{
-  background: $dark;
-}
-.dimmed{
-  background: lighten($dark, 50%);
-}
 .muted{
   background: $mute;
+}
+.fade{
+  opacity: 0.5;
+}
+.dark{
+  background: $dark;
+  color: $light;
+}
+.dimmed{
+  background: darken($light, 50%);
+  color: $light;
 }
 .highlight{
   color: $primary-color;
 }
 .center{
   text-align: center;
+}
+.large{
+  font-size: 4rem;
+  font-weight: 800;
+  vertical-align: text-bottom;
 }
 
 .block{

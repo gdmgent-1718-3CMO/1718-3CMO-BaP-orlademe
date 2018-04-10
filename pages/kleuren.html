@@ -14,7 +14,7 @@ permalink: '/kleuren/'
     </div>
     <h3>{{ logo.thumb | upcase }} LOGO </h3>
     {% for item in logo.meta %}
-      <p>{{ item }}</p>
+      <small>{{ item }}</small>
     {%endfor %}
   </div>
   {% endfor%}
@@ -28,7 +28,7 @@ permalink: '/kleuren/'
       <img src = '{{site.baseurl}}/assets/images/h{{ logo.thumb }}.png' alt = 'h{{ thumb }}'>
     </div>
     <h3>{{ logo.thumb | upcase }} LOGO </h3>
-    <p>{{ logo.meta }}</p>
+    <small>{{ logo.meta }}</small>
   
   </div>
   {% endfor %}
@@ -38,9 +38,9 @@ permalink: '/kleuren/'
 <div class = 'thumbnail-container thumbnail-container-left'>
   {% for pic in site.data.kleuren.achter %}
   <div class = 'thumbnail'>
-    <div class = 'thumbnail-inner muted'>
+    <div class = 'thumbnail-inner {% unless pic.thumb %} {{ pic.class }} {% endunless %}'>
       {% if pic.thumb %}
-      <img src = '{{site.baseurl}}/assets/images/h{{ pic.thumb }}.png' alt = 'h{{ thumb }}'>
+      <img src = '{{site.baseurl}}/assets/images/{{ pic.thumb }}.jpg' alt = '{{ thumb }}' class = 'special'>
       {% endif %}
     </div>
     <h3>{{ pic.title | upcase }} LOGO </h3>
@@ -54,7 +54,7 @@ permalink: '/kleuren/'
 <div class = 'font-container'>
   {% for item in site.data.kleuren.dosis %}
   <div class = 'font  dosis'>
-    <div class = 'font-inner muted'>
+    <div class = 'font-inner muted {{ item.class }}'>
       <h3>{{ item.title }}</h3>
       <h4>{{ item.subtitle }}</h4>
       <p>
@@ -73,7 +73,7 @@ permalink: '/kleuren/'
 <div class = 'font-container'>
   {% for item in site.data.kleuren.libre %}
   <div class = 'font  dosis'>
-    <div class = 'font-inner center muted'>
+    <div class = 'font-inner center muted {{ item.class }}'>
       <h3>{{ item.date }}</h3>
       <p>{{ item.month }}</p>
       <h3>{{ item.month | upcase }}</h3>
@@ -88,7 +88,7 @@ permalink: '/kleuren/'
 <div class = 'font-container'>
   {% for item in site.data.kleuren.libre2 %}
   <div class = 'font  dosis'>
-    <div class = 'font-inner center muted'>
+    <div class = 'font-inner center muted {{ item.class }}'>
       <h3>{{ item.first }}</h3>
       <p>-</p>
       <h3>{{ item.second }}</h3>

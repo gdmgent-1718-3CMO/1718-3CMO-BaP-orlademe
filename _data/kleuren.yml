@@ -31,23 +31,30 @@ symbols:
 achter:
   - title: DONKER GRIJZE ACHTERGROND 
     meta: "# 4D4D4D" 
+    class: dark
 
   - title: "GRIJZE  ACHTERGROND" 
     meta: "# 4D4D4D dekking 50%" 
+    class: dimmed
 
   - title: LICHT GRIJZE  ACHTERGROND  
     meta: "# F2F2F2" 
+    class: muted
 
   - title: "ORANJE ACHTERGROND"  
     meta: "# FBB03B" 
+    class: colored
 
   - title: WITTE ACHTERGROND  
     meta: "# FFFFFF" 
+    class: transparent
 
-  - title: AFBEELDING  
+  - title: AFBEELDING 
+    thumb: dog 
 
   - title: AFBEELDING MET WITTE LAYER  
     meta: "# FFFFFF dekking 30%" 
+    thumb: dog
 
 dosis:
 - title: Titel
@@ -58,15 +65,17 @@ dosis:
   subtitle: Tussentitel
   heading: GRIJZE TEKST  
   meta: "# 4D4D4D dekking 50%" 
-
+  class: fade
 - title: Titel
   subtitle: Tussentitel
   heading: ORANJE TEKST  
   meta: "# FBB03B" 
+  class: highlight
 - title: Titel
   subtitle: Tussentitel
   heading: WITTE TEKST  
   meta: "# FFFFFF"
+  class: dimmed
 
 libre:
   - date: 02 , 10
@@ -78,16 +87,19 @@ libre:
     month: september
     title: GRIJZE TEKST  
     meta: "# 4D4D4D dekking 50%"
+    class: fade
 
   - date: 02 , 10
     month: september
     title: ORANJE TEKST  
     meta: "# FBB03B" 
+    class: highlight
 
   - date: 02 , 10
     month: september
     title: WITTE TEKST  
     meta: "# FFFFFF" 
+    class: dimmed
 
 libre2:
   - first: 18u30
@@ -99,13 +111,16 @@ libre2:
     second: 19u30
     title: GRIJZE TEKST  
     meta: "# 4D4D4D dekking 50%" 
+    class: fade
 
   - first: 18u30
     second: 19u30
     title: ORANJE TEKST  
     meta: "# FBB03B" 
+    class: highlight
 
   - first: 18u30
     second: 19u30
     title: WITTE TEKST  
     meta: "# FFFFFF" 
+    class: dimmed
