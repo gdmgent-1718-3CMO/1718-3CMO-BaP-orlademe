@@ -31,8 +31,19 @@ tussentitels.</p>
 
 <h2>LIBRE BASKERVILLE</h2> 
 <p>Het font mag enkel gebruikt worden in de vorm 'Regular'</p>
-{% for item in site.data.typografie.libre %}
-   <div class = 'mute'>
-     {{ item.font }} {{ item.voorbeeld }}
-   </div>
-{% endfor %}
+
+<div class = 'font-container'>
+  {% for item in site.data.typografie.libre %}
+  <div class = 'font  dosis'>
+    <div class = 'font-inner muted center'>
+      <h3>{{ item.first | upcase }}</h3>
+      <p>{{ item.middle }}</p>
+      <h3>{{ item.second | upcase }}</h3>
+    </div>
+    <div class = 'font-footer'>
+      <h3>{{ item.font }}</h3>
+      <small>{{ item.voorbeeld }}</small>
+    </div>
+  </div>
+  {% endfor %}
+</div>

@@ -39,6 +39,7 @@ main{
   margin-right: $padding;
   text-align: center;
   min-height: 140px;
+  padding: 45px 0;
   img{
     width: 50%;
   }
@@ -88,10 +89,13 @@ main{
     flex-flow: row wrap;
     align-items: stretch;
   }
-  &-footer,
   &-inner{
     padding: 20px $padding;
     padding: 20px $padding;
+  }
+  &-footer{
+    padding: $padding * 0.5;
+    text-align: center;
   }
 
   @media screen and (min-width: $s-breakpoint) {
@@ -108,6 +112,53 @@ main{
     }
   }
 
+}
+.table{
+  padding:15px;
+  border: 1px solid darken($mute, 15%);
+  &-inner,
+  &-container{
+    display: flex;
+    flex-flow: row wrap; 
+  }
+  &-container{
+    justify-content: space-around;
+    align-items: center;
+  }
+  &-inner{
+    height:270px;
+    background: darken($mute, 15%);
+    justify-content: space-between;
+  }
+  &-part{
+    position: relative;
+    width: 50%;
+    height:135px;
+    background: $mute;
+    border: 0.5px solid darken($mute, 15%);
+  }
+  img{
+    width: 36px;
+    position: absolute;
+    &.top{
+      top:0;
+    }
+    &.right{
+      right:0;
+    }
+    &.bottom{
+      bottom:0;
+    }
+    &.left{
+      left: 0;
+    }
+  }
+  @media screen and (min-width: $s-breakpoint) {
+    width: 47%;
+  }
+  @media screen and (min-width: $m-breakpoint) {
+    width:33%;
+  }
 }
 
 .dosis:last-child{

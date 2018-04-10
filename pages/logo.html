@@ -48,7 +48,35 @@ permalink: '/logo/'
 <h2>PLAATSING</h2>  
 <p>Als je een compositie maakt, plaats je het logo of symbool in een van de vier  hoeken van de pagina.</p>
 
+<div class = 'table-container muted'>
+  {% for d in (1..2) %}
+  {% if forloop.first %}
+    {% assign img = 'gekleurd' %}
+  {% else %}
+    {% assign img = 'hgrijs' %}
+  {% endif %}
+  <div class = 'table'>
+    <div class = 'table-inner'>
+      {% for t in (1..4) %}
+        {% if forloop.index <= 2 %}
+          {% assign place = 'top' %}
+        {% else %}
+          {% assign place = 'bottom' %}
+        {% endif %}
+        {% if forloop.index == 2 or forloop.index == 4 %}
+          {% assign dir = 'right' %}
+        {% else %}
+          {% assign dir = 'left' %}
+        {% endif %}
 
+        <div class = 'table-part table-{{ forloop.index }}'>
+          <img src = '{{ site.baseurl }}/assets/images/{{img}}.png' alt = 'icon' class = '{{ place }} {{ dir }}'>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+  {% endfor %}
+</div>
 
 
 

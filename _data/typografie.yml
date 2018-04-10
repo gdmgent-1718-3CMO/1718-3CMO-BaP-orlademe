@@ -28,8 +28,14 @@ fonts:
     weight: ExtraBold
 
 libre:
-  - font: Regular
+  - first: 02 , 10
+    second: september
+    middle: september
+    font: Regular
     voorbeeld : datum
 
-  - font: Regular
+  - first: 18u30
+    second: 19u30
+    middle: '-'
+    font: Regular
     voorbeeld : tijdstip 
