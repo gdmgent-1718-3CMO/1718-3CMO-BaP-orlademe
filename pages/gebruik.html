@@ -9,7 +9,27 @@ permalink: '/gebruik/'
 <p>
   Het kan gebruikt worden zoals hier onderstaand aangegeven. Het logo of symbool mogen ook gebruikt worden op een afbeelding, zolang het de zichtbaarheid van het logo of symbool niet hindert.
 </p> 
-
+<div class = 'thumbnail-container thumbnail-container-left'>
+    {% for time in (1..4) %}
+      {%assign num = forloop.index %}
+      <!-- assign image source -->
+      {% if num <= 2 %}
+        {% assign img = 'gekleurd' % }
+      {% else %}
+        {% assign img = 'hgrijs' %}
+      {% endif %}
+      <!-- assign thumbnail class -->
+      {% if num == 1 or num == 3  %}
+        {% assign bg = 'muted' %}
+      {% else %}
+        {% assign bg = 'transparent' %}
+      {% endif %}
+  
+      <div class = 'thumbnail {{ bg }}'>
+        <img src = '{{site.baseurl}}/assets/images/{{img}}.png' alt = '{{ img }}'>
+      </div>
+    {% endfor%}
+  </div>
 
 <h2>LOGO & SYMBOOL KLEURVARIANTEN </h2>
 <p>
@@ -52,11 +72,11 @@ permalink: '/gebruik/'
     {%assign num = forloop.index %}
     <!-- assign image source -->
     {% if num <= 3 %}
-      {% assign img = 'wit' %}
+      {% assign img = 'hwit' %}
     {% elsif num <= 5 and num > 3 %}
-      {% assign img = 'oranje' %}
+      {% assign img = 'horanje' %}
     {% else %}
-      {% assign img = 'grijs' %}
+      {% assign img = 'hgrijs' %}
     {% endif %}
     <!-- assign thumbnail class -->
     {% if num == 1 or num == 4 or num == 6 %}

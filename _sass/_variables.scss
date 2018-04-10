@@ -26,8 +26,7 @@ $m-breakpoint:  769px;
 $s-breakpoint:  567px;
 
 // utilities
-.colored, .dark, .dimmed,.muted,{
-  background: $mute;
+.colored, .dark, .dimmed,.muted, .transparent{
   padding: $padding;
   margin:$padding 0;
 }
