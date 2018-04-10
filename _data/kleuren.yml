@@ -1,0 +1,69 @@
+
+logos: 
+  - thumb: gekleurd
+    meta:
+      - "GRIJS SYMBOOL : # 4D4D4D"
+      - "GRIJS KADER : # 4D4D4D"
+      - "ORANJE WOORDMERK : # FBB03B"
+  - thumb: grijs 
+    meta:
+      - "GRIJS SYMBOOL : # 4D4D4D"
+      - "GRIJS KADER : # 4D4D4D"
+      - "GRIJS WOORDMERK : # 4D4D4D"
+  - thumb: oranje
+    meta:
+      - "ORANJE SYMBOOL : # FBB03B "
+      - "ORANJE KADER : # FBB03B"
+      - "ORANJE WOORDMERK : # FBB03B"
+  - thumb: wit 
+    meta:
+      - "WIT SYMBOOL : # FFFFFF "
+      - "WIT KADER : # FFFFFF"
+      - "WIT WOORDMERK : # FFFFFF"
+symbols: 
+  - thumb: grijs 
+    meta: "SYMBOOL GRIJS : # 4D4D4D"
+  - thumb: oranje
+    meta: "ORANJE SYMBOOL : # FBB03B"
+  - thumb: wit 
+    meta: "WIT SYMBOOL : # FFFFFF"
+
+achter:
+  - title: DONKER GRIJZE ACHTERGROND 
+    meta: "# 4D4D4D" 
+
+  - title: "GRIJZE  ACHTERGROND" 
+    meta: "# 4D4D4D dekking 50%" 
+
+  - title: LICHT GRIJZE  ACHTERGROND  
+    meta: "# F2F2F2" 
+
+  - title: "ORANJE ACHTERGROND"  
+    meta: "# FBB03B" 
+
+  - title: WITTE ACHTERGROND  
+    meta: "# FFFFFF" 
+
+  - title: AFBEELDING  
+
+  - title: AFBEELDING MET WITTE LAYER  
+    meta: "# FFFFFF dekking 30%" 
+
+dosis:
+- title: Titel
+  subtitle: Tussentitel
+  heading: DONKER GRIJZE TEKST  
+  meta: "#  4D4D4D"
+- title: Titel
+  subtitle: Tussentitel
+  heading: GRIJZE TEKST  
+  meta: "# 4D4D4D dekking 50%" 
+
+- title: Titel
+  subtitle: Tussentitel
+  heading: ORANJE TEKST  
+  meta: "# FBB03B" 
+- title: Titel
+  subtitle: Tussentitel
+  heading: WITTE TEKST  
+  meta: "# FFFFFF"

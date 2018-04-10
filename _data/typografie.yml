@@ -1,0 +1,35 @@
+fonts:
+  - title: Titel
+    subtitle: Tussentitel
+    weight: ExtraLight
+
+  - title: Titel
+    subtitle: Tussentitel
+    weight: Light
+
+  - title: Titel
+    subtitle: Tussentitel
+    weight: Regular
+
+  - title: Titel
+    subtitle: Tussentitel
+    weight: Medium
+
+  - title: Titel
+    subtitle: Tussentitel
+    weight: SemiBold
+
+  - title: Titel
+    subtitle: Tussentitel
+    weight: Bold
+
+  - title: Titel
+    subtitle: Tussentitel
+    weight: ExtraBold
+
+libre:
+  - font: Regular
+    voorbeeld : datum
+
+  - font: Regular
+    voorbeeld : tijdstip 

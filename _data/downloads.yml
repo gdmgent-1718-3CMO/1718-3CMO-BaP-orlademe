@@ -1,0 +1,30 @@
+logos: 
+  - title: logo
+    thumbs:
+      - gekleurd 
+      - grijs 
+      - oranje
+      - wit
+
+  - title: symbool
+    thumbs: 
+      - grijs   
+      - oranje   
+      - wit  
+
+fonts: 
+  - name: DOSIS 
+    source: https://fonts.google.com/specimen/Dosis
+  - name: LIBRE BASKERVILLE	 
+    source: https://fonts.google.com/specimen/Libre+BaskervilleTEMPLATES 
+
+templates: 
+  - Visitekaartje
+  - Activiteitenkalender
+  - "Folder : trainingsuren"
+  - "Folder : pupyinfo"
+  - Aansluitingsformulier
+  - "Digitale nieuwsbrief"
+  - "Geplande instappen , overgangen & clubkampioenschappen"
+  - Huisreglement
+  - Briefpapier
