@@ -1,0 +1,28 @@
+function openNav() {
+  let nav = document.querySelector('.nav');
+  let open = 'nav-open';
+  nav.classList.contains(open) ? nav.classList.remove(open) : nav.classList.add(open);
+}
+
+function closeNav() {
+  document.getElementsByClassName("nav")[0].style.width = "0";
+  document.getElementsByClassName("main")[0].style.marginLeft= "0";
+  document.body.style.backgroundColor = "white";
+}
+
+// When the user scrolls down 20px from the top of the document, show the button
+// window.onscroll = function() {scrollFunction()};
+
+// function scrollFunction() {
+//     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+//         document.getElementById("to-top").style.display = "block";
+//     } else {
+//         document.getElementById("to-top").style.display = "none";
+//     }
+// }
+
+// When the user clicks on the button, scroll to the top of the document
+// function topFunction() {
+//     document.body.scrollTop = 0; // For Safari
+//     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+// }

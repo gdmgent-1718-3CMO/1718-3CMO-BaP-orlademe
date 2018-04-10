@@ -1,43 +1,103 @@
-/* Navigation
----------------------------------------------
-*/
-.navbar a {
-    border: none;
-}
-
-/* FOOTER
-----------------------------------------------
-sticked to the bottom with small content pages
-*/
-html {
-    height: 100%;
-  }
-
 body {
-    position: relative;
-    margin: 0;
-    padding-bottom: 6rem;
-    min-height: 100%;
+  position: relative;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+}
+main{
+  flex: 1;
+  padding: 80px 0 0;
+  .container{
+    padding: 25px 25px 60px;
+  }
+}
+.content{
+  @include viewport(960px);
+}
+
+.hero{
+  height: 100vh;
+  width: 100%;
+  background-color: $dark;
+  background-repeat:no-repeat;
+  // background-size: 100% 100%;
+  background-position: center;
+}
+.footer {
+  background: $mute;
+  padding: 25px;
+  text-align: center;
+  text-transform: uppercase;
+  &-inner{
+    @include viewport;
+  }
+}
+
+.thumbnail{
+  margin-right: $padding;
+  text-align: center;
+  min-height: 140px;
+  img{
+    width: 50%;
+  }
+  &-container{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    &-left {
+      justify-content: flex-start;
+    }
+  }
+  &-inner{
+    min-height: 140px;
+  }
+  @media screen and (min-width: $s-breakpoint) {
+    width: 47%;
+  }
+  @media screen and (min-width: $m-breakpoint) {
+    width:23%;
+  }
+}
+
+.font{
+  margin-right: 10px;
+  h3,h4,p {
+    font-weight: inherit;
+  }
+  &-container{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: stretch;
+  }
+  &-footer,
+  &-inner{
+    padding: 20px $padding;
+    padding: 20px $padding;
   }
 
-.bh-absolute-bottom {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  left: 0;
-}
-
-footer {
-    background-color: $mycolor-2;
-    color: $color-white;
-    a {
-        color: $color-white;
-        &:hover {
-            
-        }
+  @media screen and (min-width: $s-breakpoint) {
+    width: 47%;
+  }
+  @media screen and (min-width: $m-breakpoint) {
+    width:23%;
+  }
+  @for $i from 1 through 7 {
+    // left and right margins
+    $j : ($i + 1);
+    &-#{$i} {
+      font-weight: $j * 100;
     }
+  }
+
 }
 
+.dosis:last-child{
+  .footer-inner{
+    background: lighten($dark,30%);
+  }
+}
 /* BACK TO TOP
 -------------------------
 */
@@ -49,7 +109,7 @@ footer {
   z-index: 99; /* Make sure it does not overlap */
   border: none; /* Remove borders */
   outline: none; /* Remove outline */
-  background-color:$mycolor-3; /* Set a background color */
+  background-color:$dark; /* Set a background color */
   color: white; /* Text color */
   cursor: pointer; /* Add a mouse pointer on hover */
   //padding: 15px; /* Some padding */
@@ -58,6 +118,6 @@ footer {
   border-radius: 20px; /* Rounded corners */
   font-size: 18px; /* Increase font size */
   &:hover {
-    background-color:$mycolor-5; 
+    background-color:$light; 
   }
 }

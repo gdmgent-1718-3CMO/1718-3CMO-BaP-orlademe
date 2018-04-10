@@ -1,0 +1,54 @@
+---
+permalink: '/logo/'
+---
+<h2>LOGO</h2>
+<p>Het logo van Hond & Gezel  is een universeel kenmerk dat we in al onze communicatie gebruiken. Het logo moet direct herkenbaar zijn en is dus erg belangrijk. We vragen je het logo niet te bewerken, te wijzigen, te vervormen, in andere kleuren weer te geven of opnieuw samen te stellen.</p>
+<div class = 'thumbnail-container muted'>
+  <div class = 'thumbnail'>
+    <img src = '{{site.baseurl}}/assets/images/gekleurd.png' alt = 'gekleurd'>
+  </div>
+</div>
+
+<h2>SYMBOOL EN WOORDMERK</h2> 
+<p>Ons logo omvat zowel een symbool als een woordmerk. Zorg ervoor dat beide  elementen altijd met dezelfde verhouding worden gebruikt.</p>
+<div class = 'thumbnail-container muted'>
+  <div class = 'thumbnail'>
+    <img src = '{{site.baseurl}}/assets/images/gekleurd.png' alt = 'gekleurd'>
+  </div>
+</div>
+<h2>KLEURGEBRUIK LOGO</h2> 
+<p>Gebruik bij voorkeur ons tweekleurige logo. In bepaalde gevallen mag de kleur van het symbool en woordmerk gewijzigd worden, zoals hier onderstaand aangegeven.KLEURGEBRUIK SYMBOOL  Gebruik bij voorkeur het grijze symbool. In bepaalde gevallen mag de kleur van het symbool gewijzigd worden, zoals hier onderstaand aangegeven.</p>
+<div class = 'thumbnail-container muted'>
+  {% for thumb in site.data.logo.kleur %}
+  <div class = 'thumbnail'>
+    <img src = '{{site.baseurl}}/assets/images/{{ thumb }}.png' alt = '{{ thumb }}'>
+  </div>
+  {% endfor%}
+</div>
+
+<h2>SYMBOOL</h2> 
+<p>Het symbool dat deel uitmaakt van het logo, mag afzonderlijk gebruikt worden.</p>
+<div class = 'thumbnail-container muted'>
+  <div class = 'thumbnail'>
+    <img src = '{{site.baseurl}}/assets/images/hgrijs.png' alt = 'gekleurd'>
+  </div>
+</div>
+
+<h2>KLEURGEBRUIK SYMBOL</h2> 
+<p>Gebruik bij voorkeur ons tweekleurige logo. In bepaalde gevallen mag de kleur van het symbool en woordmerk gewijzigd worden, zoals hier onderstaand aangegeven.</p>
+<div class = 'thumbnail-container muted'>
+  {% for thumb in site.data.logo.symbol %}
+  <div class = 'thumbnail'>
+    <img src = '{{site.baseurl}}/assets/images/{{ thumb }}.png' alt = '{{ thumb }}'>
+  </div>
+  {% endfor%}
+</div>
+
+
+<h2>PLAATSING</h2>  
+<p>Als je een compositie maakt, plaats je het logo of symbool in een van de vier  hoeken van de pagina.</p>
+
+
+
+
+

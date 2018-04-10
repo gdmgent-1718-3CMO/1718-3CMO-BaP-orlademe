@@ -20,7 +20,12 @@ defaults:
 #    scope:
 #      path: "style-guide"
     values:
-      layout: horizontal
+      layout: page
+  - scope:
+      host   : 127.0.0.1
+      port   : 
+    values:
+      baseurl: /
 
 exclude:
   - Gemfile

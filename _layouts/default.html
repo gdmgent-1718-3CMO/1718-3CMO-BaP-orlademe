@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="nl">
+  {% if site.env == 'production' %}
+    {% assign url = '' %}
+  {% else %}
+    {% assign url = site.baseurl %}
+  {% endif %}
+  <head>
+    {% include head.html %}
+  </head>
+  <body>  
+    <header class = 'header'>
+      {% include nav.html %}
+    </header>
+    <main>
+      {{ content }}
+    </main>
+    <footer class = 'footer'>
+      {% include footer.html %}
+    </footer>
+    {% include js-scripts.html %}
+  </body>
+</html>

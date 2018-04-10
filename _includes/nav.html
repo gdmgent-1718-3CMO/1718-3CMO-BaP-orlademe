@@ -1,0 +1,19 @@
+<div class = 'header-inner'>
+  <div class = 'logo'>
+    <a href = '{{ site.baseurl }}/ '>
+    <img src = '{{ site.baseurl }}/assets/images/logo.png' alt = "Logo" class = 'logo-image'>
+    </a>
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()" class = 'toggle'>&#9776;</span>
+  </div>
+  <nav class = 'nav'>
+    {% for link in site.data.navigation %}
+    <a href = '{{ link.permalink | relative_url }}' class = 'nav-item
+    {% if link.permalink == page.permalink %} 
+        nav-item-active 
+    {% elsif page.layout == "post" and (link.name == "Blog")%}
+        nav-item-active
+    {% endif%}' >{{ link.name | upcase }}</a>
+    {% endfor %}
+  </nav>
+</div>  
+    

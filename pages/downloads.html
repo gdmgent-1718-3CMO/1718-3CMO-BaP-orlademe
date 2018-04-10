@@ -1,0 +1,33 @@
+---
+permalink: /downloads/
+---
+{% assign downloads = site.data.downloads %}
+<h1>DOWNLOADS</h1>
+<p>Alle benodigdheden om correct deze huisstijlgids te hanteren kan je  hieronder downloaden.</p>
+
+{% for item in downloads.logos %}
+  <h2>{{ item.title | upcase }}</h2>
+  <div class = 'thumbnail-container thumbnail-container-left'>
+    {% for thumb in item.thumbs %}
+    <div class = 'muted thumbnail'>
+      <img src = '{{ site.baseurl }}/assets/images/{{ thumb }}.png' alt = '{{ thumb }}'>
+    </div>
+    {% endfor %}
+  </div>
+{% endfor %}
+
+<h2>FONTS</h2> 
+{% for font in downloads.fonts %}
+  <h3>{{ font.name }}</h3>
+  <div class = 'muted'>{{ font.source }}</div>
+{% endfor %} 
+
+<h2>TECHNISCHE SPECIFICATIES</h2>
+<!-- pdf icon -->
+Download hier het document met alle technische specificaties die 			nodig zijn om correct gebruik te kunnen maken van de huisstijl. 
+
+<h2>TEMPLATES</h2>
+{% for template in downloads.templates %}
+  <div class = 'muted'> 0{{ forloop.index }} <span class = 'block-i ms-4'>|</span> {{ template}}</div>
+{% endfor %}
+

@@ -1,0 +1,38 @@
+---
+permalink: '/typografie/'
+---
+
+<h1>TYPOGRAFIE </h1>
+<p>Het standaard font dat gebruikt wordt is 'DOSIS'
+Het font 'DOSIS' wordt gebruikt voor titels, tussentitels en doorlopende teksten.</p>
+
+<p>Het extra font dat gebruikt wordt is 'BASKERVILLE'.  
+Het font 'BASKERVILLE' wordt enkel gebruikt voor cijfergegevens (datums en tijdstippen) en maanden weer te geven. Het wordt niet gebruikt voor  doorlopende teksten, titels of 
+tussentitels.</p>
+
+<h2>DOSIS</h2>
+<p>Het font mag gebruikt worden in al zijn varianten.</p>
+
+<div class = 'font-container'>
+  {% for item in site.data.typografie.fonts %}
+  <div class = 'font'>
+    <div class = 'font-inner muted font-{{ forloop.index }}'>
+      <h3>{{ item.title }}</h3>
+      <h4>{{ item.subtitle }}</h4>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in metus elit. Donec aliquet ullamcorper leo, nec dapibus ipsum tincidunt at. Aenean porta ornare lorem, eu tempor elit gravida non. 
+      </p>
+    </div>
+    <div class = 'font-footer'>{{ item.weight }}</div>
+  </div>
+  {% endfor %}
+</div>
+
+
+<h2>LIBRE BASKERVILLE</h2> 
+<p>Het font mag enkel gebruikt worden in de vorm 'Regular'</p>
+{% for item in site.data.typografie.libre %}
+   <div class = 'mute'>
+     {{ item.font }} {{ item.voorbeeld }}
+   </div>
+{% endfor %}

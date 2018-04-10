@@ -1,0 +1,116 @@
+---
+permalink: '/kleuren/'
+---
+
+<h1>KLEUREN</h1> 
+<p>Er mag in geen enkel geval afgeweken worden van de vooropgelegde kleuren.</p>
+
+<h2>LOGO</h2> 
+<div class = 'thumbnail-container thumbnail-container-left'>
+  {% for logo in site.data.kleuren.logos %}
+  <div class = 'thumbnail'>
+    <div class = 'thumbnail-inner muted'>
+      <img src = '{{site.baseurl}}/assets/images/{{ logo.thumb }}.png' alt = '{{ thumb }}'>
+    </div>
+    <h3>{{ logo.thumb | upcase }} LOGO </h3>
+    {% for item in logo.meta %}
+      <p>{{ item }}</p>
+    {%endfor %}
+  </div>
+  {% endfor%}
+</div>
+
+<h2>SYMBOOL</h2>
+<div class = 'thumbnail-container thumbnail-container-left'>
+  {% for logo in site.data.kleuren.symbols %}
+  <div class = 'thumbnail'>
+    <div class = 'thumbnail-inner muted'>
+      <img src = '{{site.baseurl}}/assets/images/h{{ logo.thumb }}.png' alt = 'h{{ thumb }}'>
+    </div>
+    <h3>{{ logo.thumb | upcase }} LOGO </h3>
+    <p>{{ logo.meta }}</p>
+  
+  </div>
+  {% endfor %}
+</div>
+
+<h2>ACHTERGRONDEN</h2>
+<div class = 'thumbnail-container thumbnail-container-left'>
+  {% for pic in site.data.kleuren.achter %}
+  <div class = 'thumbnail'>
+    <div class = 'thumbnail-inner muted'>
+      {% if pic.thumb %}
+      <img src = '{{site.baseurl}}/assets/images/h{{ pic.thumb }}.png' alt = 'h{{ thumb }}'>
+      {% endif %}
+    </div>
+    <h3>{{ pic.title | upcase }} LOGO </h3>
+    <p>{{ pic.meta }}</p>
+  </div>
+  {% endfor%}
+</div>
+
+<h2>TEKST</h2>
+<h3>DOSIS</h3>
+<div class = 'font-container'>
+  {% for item in site.data.kleuren.dosis %}
+  <div class = 'font  dosis'>
+    <div class = 'font-inner muted'>
+      <h3>{{ item.title }}</h3>
+      <h4>{{ item.subtitle }}</h4>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in metus elit. Donec aliquet ullamcorper leo, nec dapibus ipsum tincidunt at. Aenean porta ornare lorem, eu tempor elit gravida non. 
+      </p>
+    </div>
+    <div class = 'font-footer'>
+      <h3>{{ item.heading }}</h3>
+      <small>{{ item.meta }}</small>
+    </div>
+  </div>
+  {% endfor %}
+</div>
+
+<h2>LIBRE BASKERVILLE</h2>
+
+02 , 10
+september SEPTEMBER
+DONKER GRIJZE TEKST  
+#  4D4D4D
+
+02 , 10
+september SEPTEMBER
+GRIJZE TEKST  
+# 4D4D4D dekking 50% 
+
+02 , 10
+september SEPTEMBER
+ORANJE TEKST  
+# FBB03B 
+
+02 , 10
+september SEPTEMBER
+WITTE TEKST  
+# FFFFFF 
+
+18u30
+-
+19u30
+DONKER GRIJZE TEKST  
+#  4D4D4D
+
+18u30
+-
+19u30
+GRIJZE TEKST  
+# 4D4D4D dekking 50% 
+
+18u30
+-
+19u30
+ORANJE TEKST  
+# FBB03B 
+
+18u30
+-
+19u30
+WITTE TEKST  
+# FFFFFF 

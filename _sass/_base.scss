@@ -1,0 +1,61 @@
+
+// default-styling
+
+body {
+  font-family: $font-family;
+  font-weight: $font-normal;
+  font-size: $font-base;
+  line-height: $line-height;
+  color: $dark;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: $font-bold;
+}
+
+h1, h2{
+  font-weight: 600;
+}
+h1 {
+  font-size: 2.5rem;
+}
+h2 {
+  font-size: 2rem;
+  margin: $padding 0 1rem;
+}
+h3, h4, h5, h6 {
+  font-weight: 500;
+  font-size: 1.5rem;
+  margin: $padding 0 0;
+}
+a {
+  text-decoration: none;
+  color: $dark;
+  border-bottom: dotted 1px $dark;
+  &:hover{
+      color: $dark;
+      text-decoration: none;
+      border-bottom: solid 1px $dark;
+  }
+  &:active{
+      background-color: $dark;
+      color: $light;
+  }
+}
+
+
+// ongeordende lijstjes met een ander symbool of kleur
+main ul {
+list-style: none;  
+margin: 0 0 1em;
+padding: 0;
+li {
+  padding-left: 25px;
+  text-indent: -25px;
+  &:before {
+      content:'\2022';
+      color: inherit;
+      margin-right: 18px;
+  }    
+}
+}
