@@ -70,47 +70,33 @@ permalink: '/kleuren/'
 </div>
 
 <h2>LIBRE BASKERVILLE</h2>
-
-02 , 10
-september SEPTEMBER
-DONKER GRIJZE TEKST  
-#  4D4D4D
-
-02 , 10
-september SEPTEMBER
-GRIJZE TEKST  
-# 4D4D4D dekking 50% 
-
-02 , 10
-september SEPTEMBER
-ORANJE TEKST  
-# FBB03B 
-
-02 , 10
-september SEPTEMBER
-WITTE TEKST  
-# FFFFFF 
-
-18u30
--
-19u30
-DONKER GRIJZE TEKST  
-#  4D4D4D
-
-18u30
--
-19u30
-GRIJZE TEKST  
-# 4D4D4D dekking 50% 
-
-18u30
--
-19u30
-ORANJE TEKST  
-# FBB03B 
-
-18u30
--
-19u30
-WITTE TEKST  
-# FFFFFF 
+<div class = 'font-container'>
+  {% for item in site.data.kleuren.libre %}
+  <div class = 'font  dosis'>
+    <div class = 'font-inner muted'>
+      <h3>{{ item.date }}</h3>
+      <p>{{ item.month }}</p>
+      <h3>{{ item.month | upcase }}</h3>
+    </div>
+    <div class = 'font-footer'>
+      <h3>{{ item.title }}</h3>
+      <small>{{ item.meta }}</small>
+    </div>
+  </div>
+  {% endfor %}
+</div>
+<div class = 'font-container'>
+  {% for item in site.data.kleuren.libre2 %}
+  <div class = 'font  dosis'>
+    <div class = 'font-inner muted'>
+      <h3>{{ item.firs }}</h3>
+      <p>-</p>
+      <h3>{{ item.second | upcase }}</h3>
+    </div>
+    <div class = 'font-footer'>
+      <h3>{{ item.title }}</h3>
+      <small>{{ item.meta }}</small>
+    </div>
+  </div>
+  {% endfor %}
+</div>

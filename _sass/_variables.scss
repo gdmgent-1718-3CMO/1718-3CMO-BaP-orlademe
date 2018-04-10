@@ -62,6 +62,12 @@ $s-breakpoint:  567px;
   }
 }
 
+@for $i from 1 through 6 {
+  h#{$i}{
+    font-size: 2rem - ($i*.25);
+  }
+}
+
 @mixin viewport ($width: $max-width){
   width:100%;
   max-width: $width;

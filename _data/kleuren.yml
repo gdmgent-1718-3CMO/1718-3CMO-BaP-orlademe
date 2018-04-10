@@ -67,3 +67,45 @@ dosis:
   subtitle: Tussentitel
   heading: WITTE TEKST  
   meta: "# FFFFFF"
+
+libre:
+  - date: 02 , 10
+    month: september
+    title: DONKER GRIJZE TEKST  
+    meta: "#  4D4D4D"
+
+  - date: 02 , 10
+    month: september
+    title: GRIJZE TEKST  
+    meta: "# 4D4D4D dekking 50%"
+
+  - date: 02 , 10
+    month: september
+    title: ORANJE TEKST  
+    meta: "# FBB03B" 
+
+  - date: 02 , 10
+    month: september
+    title: WITTE TEKST  
+    meta: "# FFFFFF" 
+
+libre2:
+  - first: 18u30
+    second: 19u30
+    title: DONKER GRIJZE TEKST  
+    meta: "#  4D4D4D"
+
+  - first: 18u30
+    second: 19u30
+    title: GRIJZE TEKST  
+    meta: "# 4D4D4D dekking 50%" 
+
+  - first: 18u30
+    second: 19u30
+    title: ORANJE TEKST  
+    meta: "# FBB03B" 
+
+  - first: 18u30
+    second: 19u30
+    title: WITTE TEKST  
+    meta: "# FFFFFF" 
