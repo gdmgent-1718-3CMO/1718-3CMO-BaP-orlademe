@@ -59,6 +59,14 @@ main{
   @media screen and (min-width: $m-breakpoint) {
     width:23%;
   }
+  &-small{
+    @media screen and (min-width: $s-breakpoint) {
+      width: 20%;
+    }
+    @media screen and (min-width: $m-breakpoint) {
+      width:12%;
+    } 
+  }
   &-stretch{
     min-height: 275px;
     display: flex;

@@ -19,7 +19,60 @@ permalink: '/gebruik/'
   Het kan gebruikt worden zoals hier onderstaand aangegeven. Het logo of symbool mogen ook gebruikt worden op een afbeelding, zolang het de zichtbaarheid van het logo of symbool niet hindert. 
 </p>
 
+<div class = 'thumbnail-container thumbnail-container-left'>
+  {% for time in (1..7) %}
+    {%assign num = forloop.index %}
+    <!-- assign image source -->
+    {% if num <= 3 %}
+      {% assign img = 'wit' %}
+    {% elsif num <= 5 and num > 3 %}
+      {% assign img = 'oranje' %}
+    {% else %}
+      {% assign img = 'grijs' %}
+    {% endif %}
+    <!-- assign thumbnail class -->
+    {% if num == 1 or num == 4 or num == 6 %}
+      {% assign bg = 'muted' %}
+    {% elsif num == 5 or num == 7 %}
+      {% assign bg = 'transparent' %}
+    {% elsif num == 3 %}
+      {% assign bg = 'colored' %}
+    {% else %}
+      {% assign bg = 'dark' %}
+    {% endif %}
 
+    <div class = 'thumbnail thumbnail-small {{ bg }}'>
+      <img src = '{{site.baseurl}}/assets/images/{{img}}.png' alt = '{{ img }}'>
+    </div>
+  {% endfor%}
+</div>
+
+<div class = 'thumbnail-container thumbnail-container-left'>
+  {% for time in (1..7) %}
+    {%assign num = forloop.index %}
+    <!-- assign image source -->
+    {% if num <= 3 %}
+      {% assign img = 'wit' %}
+    {% elsif num <= 5 and num > 3 %}
+      {% assign img = 'oranje' %}
+    {% else %}
+      {% assign img = 'grijs' %}
+    {% endif %}
+    <!-- assign thumbnail class -->
+    {% if num == 1 or num == 4 or num == 6 %}
+      {% assign bg = 'muted' %}
+    {% elsif num == 5 or num == 7 %}
+      {% assign bg = 'transparent' %}
+    {% elsif num == 3 %}
+      {% assign bg = 'colored' %}
+    {% else %}
+      {% assign bg = 'dark' %}
+    {% endif %}
+    <div class = 'thumbnail thumbnail-small {{ bg }}'>
+      <img src = '{{site.baseurl}}/assets/images/{{img}}.png' alt = '{{ img }}'>
+    </div>
+  {% endfor%}
+</div>
 <h2>ONJUIST GEBRUIK</h2> 
 
 <div class = 'thumbnail-container thumbnail-container-left'>
