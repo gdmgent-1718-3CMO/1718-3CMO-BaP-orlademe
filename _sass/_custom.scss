@@ -59,6 +59,12 @@ main{
   @media screen and (min-width: $m-breakpoint) {
     width:23%;
   }
+  &-stretch{
+    min-height: 275px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .font{

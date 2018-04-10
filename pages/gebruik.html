@@ -22,14 +22,15 @@ permalink: '/gebruik/'
 
 <h2>ONJUIST GEBRUIK</h2> 
 
-Gebruik het logo niet zonder  het kader
-Gebruik het logo niet in een zwarte kleur
-Gebruik het woordmerk niet afzonderlijk
-Draai zowel het logo als  symbool niet om
-Versmal het logo niet
-Rek het logo niet uit
-Plaats het symbool niet naast  het woordmerk
-Gebruik geen  verkeerde kleuren
-
+<div class = 'thumbnail-container thumbnail-container-left'>
+  {% for item in site.data.gebruik.onjuist %}
+  <div class = 'thumbnail'>
+    <div class = 'thumbnail-inner thumbnail-stretch muted'>
+      <img src = '{{site.baseurl}}/assets/images/onjuist{{ forloop.index}}.png' alt = 'onjuist{{ forloo.index }}'>
+    </div>
+    <p>{{ item }}</p>
+  </div>
+  {% endfor%}
+</div>
  
 
