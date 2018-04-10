@@ -2,7 +2,7 @@
 permalink: '/gebruik/'
 ---
 
-<h1>JUIST GEBRUIK </h1>
+<h1 class = 'highlight'>JUIST GEBRUIK </h1>
 <p>
   Het logo en symbool moeten gebruikt worden in de originele kleuren en originele  afmetingen. Het mag in geen geval verandert of vervormt worden. 
 </p>
@@ -11,10 +11,10 @@ permalink: '/gebruik/'
 </p> 
 <div class = 'thumbnail-container thumbnail-container-left'>
     {% for time in (1..4) %}
-      {%assign num = forloop.index %}
+      {% assign num = forloop.index %}
       <!-- assign image source -->
       {% if num <= 2 %}
-        {% assign img = 'gekleurd' % }
+        {% assign img = 'gekleurd' %}
       {% else %}
         {% assign img = 'hgrijs' %}
       {% endif %}

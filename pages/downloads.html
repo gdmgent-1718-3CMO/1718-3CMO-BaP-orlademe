@@ -2,15 +2,18 @@
 permalink: /downloads/
 ---
 {% assign downloads = site.data.downloads %}
-<h1>DOWNLOADS</h1>
+<h1 class = 'highlight'>DOWNLOADS</h1>
 <p>Alle benodigdheden om correct deze huisstijlgids te hanteren kan je  hieronder downloaden.</p>
 
 {% for item in downloads.logos %}
   <h2>{{ item.title | upcase }}</h2>
   <div class = 'thumbnail-container thumbnail-container-left'>
     {% for thumb in item.thumbs %}
-    <div class = 'muted thumbnail'>
-      <img src = '{{ site.baseurl }}/assets/images/{{ thumb }}.png' alt = '{{ thumb }}'>
+    <div class = 'thumbnail'>
+      <div class = 'thumbnail-inner muted'>
+        <img src = '{{ site.baseurl }}/assets/images/{{ thumb }}.png' alt = '{{ thumb }}'>
+      </div>
+      <h4>{{ thumb | upcase }}{{ item.title | upcase }}</h4>
     </div>
     {% endfor %}
   </div>
