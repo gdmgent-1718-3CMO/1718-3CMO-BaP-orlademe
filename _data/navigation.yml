@@ -1,0 +1,33 @@
+# functie uitschakelen met '#'
+# dubbele spatie voor de criteria behouden
+
+- name: Home
+  description: Home
+  # folder: pages/
+  permalink: / 
+  # fa-icon: icon-info
+
+- name: Logo
+  description: Logo
+  # folder: pages/logo/
+  permalink: /logo
+  # fa-icon: icon-graduation-cap
+
+- name: Kleur
+  description: Kleur
+  # folder: pages/kleur/
+  permalink: /kleur
+  # fa-icon: icon-info
+
+- name: Typografie
+  description: Font
+  # folder: pages/font
+  permalink: /font
+  # fa-icon: icon-info
+
+- name: Toepassingen
+  description: Voorbeelden van toepassingen
+  # folder: pages/toepassing
+  permalink: /toepassing
+  # fa-icon: icon-info
+
